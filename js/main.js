@@ -56,9 +56,9 @@ function populateTable (table, posts) {
             dataCell.appendChild(addInfo);
         }
         let AddUpdate = row.insertCell();
-        let generateUpdate = document.createElement("button");
+        let generateUpdate = document.createElement("a");
         generateUpdate.innerHTML="Update";
-        generateUpdate.onclick = "update.html?" + one.id; 
+        generateUpdate.href= "update.html?" + one.id; 
         AddUpdate.appendChild(generateUpdate);
 
         let AddDelete = row.insertCell();
